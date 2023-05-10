@@ -1,23 +1,23 @@
 #include <iostream>
-
+// first program in C++ course
 using namespace std;
 
-int uczniowie, cukierki, dostac, zostac;
+int classmates, sweets, given, forJohnny;
 
 int main() {
-    cout << "Ilu uczniow jest w Twojej klasie: ";
-    cin >> uczniowie;
+    cout << "How many classmates are in your class? : ";
+    cin >> classmates;
 
-    cout << "Ile cukierkow kupila mama: ";
-    cin >> cukierki;
+    cout << "How many sweets did mom buy? : ";
+    cin >> sweets;
 
-    dostac = cukierki/(uczniowie-1);
+    given = sweets / (classmates - 1);
 
-    cout << "Cukierkow dla kazdego ucznia: " <<dostac;
+    cout << "Sweets fo each classmate : " << given;
 
-    zostac = cukierki-dostac*(uczniowie-1);
+    forJohnny = sweets - given * (classmates - 1);
 
-    cout <<endl<< "Dla Jasia na wieczor: " <<zostac;
+    cout << endl << "Sweets left for Johnny: " << forJohnny;
 
     return 0;
 }
